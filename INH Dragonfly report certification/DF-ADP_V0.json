@@ -1,0 +1,39 @@
+{
+	"Name"        : "testing3",
+	"Author"      : "TXS built-in",
+	"Date"        : "04.01.2013",
+	"Version"     : "1.1",
+	"Description" : "Default LaTeX class for tobias using separate files for each chapter.",
+	"License"     : "Public Domain",
+
+	"FilesToOpen" : [
+		"./Latex_template/report.tex",
+		"./Latex_template/report.bib",
+		"./Latex_template/thesis-tobias.cls",
+		"./Latex_template/figures/",
+		"./Latex_template/figures/cockpit.jpg",
+		"./Latex_template/figuresMotor1.jpg/",
+		"./Latex_template/figures/Motor2.jpg",
+		"./Latex_template/figures/Inholland_University_black.png",
+		"./Latex_template/figures/Inholland_University_white.png",
+		"./Latex_template/appendix/",
+		"./Latex_template/frontmatter/",
+		"./Latex_template/frontmatter/nomenclature.tex",
+		"./Latex_template/frontmatter/preface.tex",
+		"./Latex_template/frontmatter/summary.tex",
+		"./Latex_template/frontmatter/title-report.tex",
+		"./Latex_template/frontmatter/title-thesis.tex",
+		"./Latex_template/refrences/",
+		"./Latex_template/mainmatter/",
+		"./Latex_template/mainmatter/introduction.tex",
+		"./Latex_template/mainmatter/SystemOverview.tex",
+		"./Latex_template/mainmatter/Testcases.tex",
+		"./Latex_template/mainmatter/TestExcecution.tex",
+		"./Latex_template/mainmatter/TestReporting.tex",
+		"./Latex_template/mainmatter/TestSignoff.tex",
+		"./Latex_template/mainmatter/TestStrategy.tex"
+
+	],
+	"EditorCommand" : "texstudio ./Latex_template/report.tex"
+
+}

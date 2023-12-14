@@ -1,0 +1,18 @@
+@Electronic{Test Planning – Advancing theScience Tutorial,
+  author       = {Stephen Scukanec},
+  month        = mar,
+  organization = {Northrop Grumman},
+  url          = {https://ndiastorage.blob.core.usgovcloudapi.net/ndia/2011/test/11653MondayScukanec11653.pdf},
+  year         = {2011},
+}
+
+@Book{,
+  author    = {Harold Kerzner},
+  publisher = {Wiley & Sons},
+  title     = {Project Management a SystemsApproach to Planning, Scheduling, and Controlling},
+  isbn      = {978-1-119-16535-4},
+  pages     = {848},
+  subtitle  = {A Systems Approach to Planning, Scheduling, and Controlling},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

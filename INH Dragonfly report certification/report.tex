@@ -1,0 +1,80 @@
+\documentclass{thesis-tobias}
+
+%% Set up the bibliography
+\usepackage{biblatex}
+\addbibresource{report.bib}
+
+%% Additional packages and commands
+\usepackage{parskip}
+\setlist{itemsep=-2pt} % Reducing white space in lists slightly
+\renewcommand{\deg}{\si{\degree}\xspace} % Use \deg easily, everywhere
+
+%% ----------------------------------------------------------------------
+%%    Begin of document + Frontmatter (Roman page numbering)
+%% ----------------------------------------------------------------------
+\setenumerate[2]{label=\alph*.}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\begin{document}
+
+\frontmatter
+
+%% Define the main parameters
+\title{title}
+\subtitle{subtitle}
+\author{someone}
+
+\LatestVersion{1}
+
+\subject{Project DragonFly} % Cover only
+\affiliation{Inholland University of Applied Sciences Delft} % Cover only
+\coverimage{figures/Motor1.jpg} % Aspect ratio of 2:3 (portrait) recommended
+\definecolor{title}{HTML}{4884d6} % Color for cover title
+
+\makecover
+
+\input{frontmatter/title-report}
+\input{frontmatter/preface}
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+%\input{frontmatter/nomenclature}
+
+%% ----------------------------------------------------------------------
+%%    Mainmatter (Arabic page numbering)
+%% ----------------------------------------------------------------------
+
+\mainmatter
+
+\input{mainmatter/introduction.tex}
+\input{mainmatter/SystemOverview}
+\input{mainmatter/TestStratagy}
+\input{mainmatter/TestCases}
+\input{mainmatter/TestExecution}
+\input{mainmatter/TestReporting}
+\input{mainmatter/TestSignoff}
+
+%% Prevent urls running into margins in bibliography
+\setcounter{biburlnumpenalty}{7000}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{7000}
+
+%% Add bibliography
+\printbibliography[heading=bibintoc,title=References]
+
+%% ----------------------------------------------------------------------
+%%    Appendix (Letters for chapters)
+%% ----------------------------------------------------------------------
+
+\appendix
+
+%\input{appendix/appendix-a}
+
+\end{document}

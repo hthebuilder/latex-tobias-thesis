@@ -1,0 +1,59 @@
+\begin{titlepage}
+
+\begin{center}
+
+%% Print the title
+{\makeatletter
+\largetitlestyle\fontsize{45}{45}\selectfont\@title
+\makeatother}
+
+%% Print the subtitle
+{\makeatletter
+\ifdefvoid{\@subtitle}{}{\bigskip\titlestyle\fontsize{20}{20}\selectfont\@subtitle}
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+
+\bigskip
+\bigskip
+
+%% Print the name of the author
+{\makeatletter
+\largetitlestyle\fontsize{25}{25}\selectfont\@author
+\makeatother}
+
+\bigskip
+\bigskip
+
+%% Print table with names and student numbers
+
+\vfill
+
+%% Print some more information at the bottom
+\begin{tabular}{ll}
+    Last updated: & \today 
+\end{tabular}
+
+\bigskip
+\bigskip
+
+%% Add a source and description for the cover and optional attribution for the template
+\begin{tabular}{p{15mm}p{10cm}}
+    Cover: & Dragonfly PH-HBR, Teuge Airport (TW. Kroes) \\
+    % Feel free to remove the following attribution, it is not required - still appreciated :-)
+    Style: & TU Delft Report Style, with modifications
+\end{tabular}
+
+\end{center}
+
+%% Insert the Inholland logo at the bottom of the page
+\begin{tikzpicture}[remember picture, overlay]
+    \node[above=10mm] at (current page.south) {%
+        \includegraphics[width=0.35\linewidth]{figures/Inholland_University_black.png}
+    };
+\end{tikzpicture}
+
+\end{titlepage}
