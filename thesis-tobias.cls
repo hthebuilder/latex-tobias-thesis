@@ -150,13 +150,11 @@
 \fancyhead[LE,RO]{\titlestyle\thepage}
 \fancyhead[RE]{\titlestyle\nouppercase{\leftmark}}
 \fancyhead[LO]{\titlestyle\nouppercase{\rightmark}}
-\fancyhead[CE,CO]{Version: \@LatestVersion}
 \RequirePackage{emptypage} % Remove header and footer on empty pages
 \else
 \fancyhf{}
 \fancyhead[R]{\titlestyle\thepage}
 \fancyhead[L]{\titlestyle\nouppercase{\rightmark}}
-\fancyhead[C]{Version: \@LatestVersion}
 \fi
 
 \pagestyle{fancy} % Set the package defaults and the additional changes as the style
